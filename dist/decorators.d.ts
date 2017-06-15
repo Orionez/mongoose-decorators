@@ -1,3 +1,4 @@
+/// <reference types="mongoose" />
 import "reflect-metadata";
 import * as Mongoose from 'mongoose';
 /**
@@ -11,28 +12,28 @@ export declare function schema(target: Function): void;
  * @param {Mongoose.SchemaTypeOpts<any>} options Field options as defined by mongoose
  */
 export declare const field: {
-    (options?: any): PropertyDecorator;
+    (options?: Mongoose.SchemaTypeOpts<any>): PropertyDecorator;
     (target: any, propertyKey: string): void;
 };
 /**
  * Specialization of @Field which marks a field required
  */
 export declare const required: {
-    (options?: any): PropertyDecorator;
+    (options?: Mongoose.SchemaTypeOpts<any>): PropertyDecorator;
     (target: any, propertyKey: string): void;
 };
 /**
  * Specialization of @Field which marks a field to be an index
  */
 export declare const indexed: {
-    (options?: any): PropertyDecorator;
+    (options?: Mongoose.SchemaTypeOpts<any>): PropertyDecorator;
     (target: any, propertyKey: string): void;
 };
 /**
  * Specialization of @Field which marks a field to be unique
  */
 export declare const unique: {
-    (options?: any): PropertyDecorator;
+    (options?: Mongoose.SchemaTypeOpts<any>): PropertyDecorator;
     (target: any, propertyKey: string): void;
 };
 /**

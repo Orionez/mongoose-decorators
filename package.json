@@ -1,15 +1,15 @@
 {
   "name": "mongoose-decorators",
-  "version": "1.0.0-alpha1",
+  "version": "1.0.0",
   "description": "Define your mongoose models/schemas easily with Typescript decorators",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "scripts": {
-    "prepublish": "tsc"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leodinas-hao/mongoose-decorators.git"
+    "url": "git+https://github.com/orionez/mongoose-decorators.git"
+  },
+  "publishConfig": {
+    "registry": "http://10.0.16.61:8081/repository/localNpm/"
   },
   "keywords": [
     "nodejs",
@@ -20,17 +20,16 @@
   "author": "Leodinas Hao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leodinas-hao/mongoose-decorators/issues"
+    "url": "https://github.com/orionez/mongoose-decorators/issues"
   },
-  "homepage": "https://github.com/leodinas-hao/mongoose-decorators#readme",
+  "homepage": "https://github.com/orionez/mongoose-decorators#readme",
   "dependencies": {
     "mongoose": "^4.10.0",
     "reflect-metadata": "^0.1.10"
   },
   "devDependencies": {
-    "@types/mongoose": "^4.7.12",
-    "@types/node": "^7.0.18",
-    "ts-node": "^3.0.4",
+    "@types/mongoose": "^4.7.17",
+    "@types/node": "^6.0.78",
     "typescript": "^2.3.2"
   }
 }
